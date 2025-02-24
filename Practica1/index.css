@@ -1,0 +1,66 @@
+
+/* Layout Fijo */
+.layout-fijo {
+    width: 800px;
+    margin: 10px auto;
+    border: 2px solid #0077cc;
+    padding: 10px;
+}
+
+/* Layout Fluido */
+.layout-fluido {
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid #33cc33;
+    padding: 10px;
+}
+
+/* Layout Responsivo */
+.layout-responsivo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    border: 2px solid #ff9900;
+    padding: 10px;
+}
+
+/* Layout con CSS Grid */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #cc00cc;
+}
+.layout-grid div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Layout con Flexbox */
+.layout-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border: 2px solid #ff3333;
+}
+.layout-flex div {
+    background-color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+}
+.intro {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}

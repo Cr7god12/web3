@@ -1,0 +1,156 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Layouts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea de Web: 3 Tipos de Layouts</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>¿Qué es un Layout?</h2>
+            <p>La palabra <strong>layout</strong> sirve para hacer referencia a la manera en que están distribuidos los elementos y las formas dentro de un diseño. Se traduce al español como "disposición", "plan" o "diseño".</p>
+            <p>Es la representación de un plano sobre el cual se distribuye un espacio específico. En desarrollo web, el layout es la base sobre la cual se construye una página o sitio web.</p>
+        </section>
+            <ul  class="layout-list">
+                <li><a href="fixed.html">Layout Fijo</a></li>
+                <li>
+                    <a href="flexbox.html"><p>layout-flex</p></a>
+                </li>
+                <li>
+                    <a href="fluid.html"><p>layout-fluido</p></a>
+                </li>
+                <li>
+                    <a href="grid.html"><p>layout-grid</p></a>
+                </li>
+                <li>
+                    <a href="responsive.html"><p>layout-responsivo</p></a>
+                </li>
+            </ul>
+        
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.intro {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.layout-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.layout-list li {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.layout-list li:hover {
+    background-color: #0056a1;
+    transform: scale(1.05);
+}
+
+.layout-list p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+.layout-fijo {
+    width: 800px;
+    margin: 10px auto;
+    border: 2px solid #0077cc;
+    padding: 10px;
+}
+
+.layout-fluido {
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid #33cc33;
+    padding: 10px;
+}
+
+/* Layout Responsivo */
+.layout-responsivo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    border: 2px solid #ff9900;
+    padding: 10px;
+}
+
+/* Layout con CSS Grid */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #cc00cc;
+}
+.layout-grid div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Layout con Flexbox */
+.layout-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border: 2px solid #ff3333;
+}
+.layout-flex div {
+    background-color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+}
+.intro {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
